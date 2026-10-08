@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TrustGuard AI - App Access</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+        <header>
+
+            <div class="logo">
+
+                <div class="shield">
+                    &#128737;&#65039;
+                </div>
+
+                <div>
+                    <h1>TrustGuard <span>AI</span></h1>
+                    <p>App Access Control</p>
+                </div>
+
+            </div>
+
+            <div class="status">
+                <span></span>
+                Protected
+            </div>
+
+        </header>
+
+
+        <main>
+
+            <!-- TITLE -->
+            <section class="hero">
+
+                <div class="hero-icon">
+                    &#128274;
+                </div>
+
+                <h2>App Access Control</h2>
+
+                <p>
+                    Choose which apps should have access
+                    to protected features.
+                </p>
+
+            </section>
+
+
+            <!-- APP LIST -->
+            <section class="actions">
+
+
+                <!-- WhatsApp -->
+                <div class="card app-card">
+
+                    <div class="card-icon">
+                        &#128172;
+                    </div>
+
+                    <h3>WhatsApp</h3>
+
+                    <p>
+                        Message protection
+                    </p>
+
+                    <button
+                        class="app-toggle"
+                        onclick="toggleApp(this, 'WhatsApp')">
+
+                        Allow Access
+
+                    </button>
+
+                </div>
+
+
+                <!-- Instagram -->
+                <div class="card app-card">
+
+                    <div class="card-icon">
+                        &#128247;
+                    </div>
+
+                    <h3>Instagram</h3>
+
+                    <p>
+                        Message & link protection
+                    </p>
+
+                    <button
+                        class="app-toggle"
+                        onclick="toggleApp(this, 'Instagram')">
+
+                        Allow Access
+
+                    </button>
+
+                </div>
+
+
+                <!-- Messages -->
+                <div class="card app-card">
+
+                    <div class="card-icon">
+                        &#128172;
+                    </div>
+
+                    <h3>Messages</h3>
+
+                    <p>
+                        SMS scam protection
+                    </p>
+
+                    <button
+                        class="app-toggle"
+                        onclick="toggleApp(this, 'Messages')">
+
+                        Allow Access
+
+                    </button>
+
+                </div>
+
+
+                <!-- Chrome -->
+                <div class="card app-card">
+
+                    <div class="card-icon">
+                        &#127760;
+                    </div>
+
+                    <h3>Chrome</h3>
+
+                    <p>
+                        Suspicious website protection
+                    </p>
+
+                    <button
+                        class="app-toggle"
+                        onclick="toggleApp(this, 'Chrome')">
+
+                        Allow Access
+
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- INFORMATION -->
+            <section class="security">
+
+    <div>
+
+        <strong>&#128274;</strong>
+
+        <span>
+            <strong id="protectedAppCount">0 Apps Protected</strong>
+        </span>
+
+    </div>
+
+    <p id="appProtectionStatus">
+        TrustGuard is monitoring your selected apps.
+    </p>
+
+</section>
+
+        </main>
+
+
+        <!-- NAVIGATION -->
+        <nav>
+
+            <div
+                class="nav-item"
+                onclick="window.location.href='index.html'">
+
+                &#127968;
+
+                <span>Home</span>
+
+            </div>
+
+
+            <div
+                class="nav-item"
+                onclick="window.location.href='scan.html'">
+
+                &#128269;
+
+                <span>Scan</span>
+
+            </div>
+
+
+            <div
+                class="nav-item"
+                onclick="window.location.href='safety.html'">
+
+                &#128202;
+
+                <span>Safety</span>
+
+            </div>
+
+
+            <div
+                class="nav-item active">
+
+                &#128274;
+
+                <span>Apps</span>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

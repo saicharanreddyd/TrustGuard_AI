@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TrustGuard AI - Safety</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+
+            <div class="shield">🛡️</div>
+
+            <div>
+                <h1>TrustGuard <span>AI</span></h1>
+                <p>Personal Digital Safety</p>
+            </div>
+
+        </div>
+
+        <div class="status">
+            <span></span> Protected
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Dashboard heading -->
+        <section class="hero">
+
+            <div class="hero-icon">📊</div>
+
+            <h2>Safety Dashboard</h2>
+
+            <p>
+                View your recent TrustGuard AI security activity.
+            </p>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="actions">
+
+            <div class="card">
+
+                <div class="card-icon">🔍</div>
+
+                <h3 id="totalScans">
+                    0
+                </h3>
+
+                <p>
+                    Total Scans
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">🔴</div>
+
+                <h3 id="dangerousScans">
+                    0
+                </h3>
+
+                <p>
+                    Dangerous
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">🟠</div>
+
+                <h3 id="suspiciousScans">
+                    0
+                </h3>
+
+                <p>
+                    Suspicious
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">🟢</div>
+
+                <h3 id="safeScans">
+                    0
+                </h3>
+
+                <p>
+                    Low Risk
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Protection status -->
+<section class="security">
+
+    <div>
+
+        <strong>
+            🛡️ Protection Status
+        </strong>
+
+        <p>
+            TrustGuard AI is actively monitoring your submitted content.
+        </p>
+
+        <p style="margin-top:10px;">
+            <strong id="threatLevel">
+                🟢 LOW THREAT
+            </strong>
+        </p>
+
+        <p id="threatDescription">
+            No recent threats detected.
+        </p>
+
+    </div>
+
+</section>
+<!-- Protection score -->
+<section class="security">
+
+    <div>
+
+        <strong>
+            🛡️ TrustGuard Protection Score
+        </strong>
+
+        <p
+            id="protectionScore"
+            style="
+                font-size:32px;
+                font-weight:bold;
+                margin-top:12px;
+            "
+        >
+            100/100
+        </p>
+
+        <p id="protectionScoreText">
+            Excellent protection status.
+        </p>
+
+    </div>
+
+</section>
+
+
+        <!-- Recent activity -->
+        <section class="scanner">
+
+            <h2>
+                Recent Activity
+            </h2>
+
+            <br>
+
+            <div id="history">
+
+                <p>
+                    No scans yet.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Clear history -->
+        <section class="scanner">
+
+            <button
+    onclick="clearHistory()"
+    style="
+        width:100%;
+        padding:13px;
+        border:none;
+        border-radius:10px;
+        background:#ef4444;
+        color:white;
+        font-weight:bold;
+        cursor:pointer;
+    "
+>
+    🗑️ Delete Safety Data Now
+</button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Navigation -->
+    <nav>
+
+        <div
+            class="nav-item"
+            onclick="window.location.href='index.html'"
+        >
+            🏠
+            <span>Home</span>
+        </div>
+
+
+        <div
+            class="nav-item"
+            onclick="window.location.href='scan.html?type=message'"
+        >
+            🔍
+            <span>Scan</span>
+        </div>
+
+
+        <div
+            class="nav-item active"
+            onclick="window.location.href='safety.html'"
+        >
+            📊
+            <span>Safety</span>
+        </div>
+
+
+        <div class="nav-item">
+            ⚙️
+            <span>Settings</span>
+        </div>
+
+    </nav>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

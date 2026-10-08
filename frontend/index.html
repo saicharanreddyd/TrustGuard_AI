@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TrustGuard AI</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+        <header>
+
+            <div class="logo">
+
+                <div class="shield">&#128737;&#65039;</div>
+
+                <div>
+                    <h1>TrustGuard <span>AI</span></h1>
+                    <p>Personal Digital Safety</p>
+                </div>
+
+            </div>
+
+            <div class="status">
+                <span></span>
+                Protected
+            </div>
+
+        </header>
+
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- HERO -->
+            <section class="hero">
+
+                <div class="hero-icon">&#128737;&#65039;</div>
+
+                <h2>You're Protected</h2>
+
+                <p>
+                    TrustGuard automatically helps detect
+                    suspicious messages, links, emails and news.
+                </p>
+
+            </section>
+
+
+            <!-- SECURITY ACTIONS -->
+            <section class="actions">
+
+                <!-- Notifications -->
+                <div class="card" onclick="openScanner('notification')">
+
+                    <div class="card-icon">&#128276;</div>
+
+                    <h3>Notifications</h3>
+
+                    <p>
+                        Check suspicious notifications
+                    </p>
+
+                </div>
+
+
+                <!-- Link Scanner -->
+                <div class="card" onclick="openScanner('link')">
+
+                    <div class="card-icon">&#128279;</div>
+
+                    <h3>Check a Link</h3>
+
+                    <p>
+                        Detect suspicious websites
+                    </p>
+
+                </div>
+
+
+                <!-- Message Scanner -->
+                <div class="card" onclick="openScanner('message')">
+
+                    <div class="card-icon">&#128172;</div>
+
+                    <h3>Check Message</h3>
+
+                    <p>
+                        Analyze messages and scams
+                    </p>
+
+                </div>
+
+
+                <!-- News Verification -->
+                <div class="card" onclick="openScanner('news')">
+
+                    <div class="card-icon">&#128240;</div>
+
+                    <h3>Verify News</h3>
+
+                    <p>
+                        Check claims and information
+                    </p>
+
+                </div>
+
+
+                <!-- APP ACCESS CONTROL -->
+                <div class="card" onclick="openAppControl()">
+
+                    <div class="card-icon">&#128274;</div>
+
+                    <h3>App Access Control</h3>
+
+                    <p>
+                        Manage protected apps
+                    </p>
+
+                </div>
+
+
+                <!-- SAFETY DASHBOARD -->
+                <div class="card" onclick="window.location.href='safety.html'">
+
+                    <div class="card-icon">&#128202;</div>
+
+                    <h3>Safety Dashboard</h3>
+
+                    <p>
+                        View your security activity
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- SECURITY STATUS -->
+            <section class="security">
+
+                <div>
+
+                    <strong>&#128737;&#65039;</strong>
+
+                    <span>
+                        TrustGuard Protection Active
+                    </span>
+
+                </div>
+
+                <p>
+                    Your scans and detected threats are monitored
+                    automatically.
+                </p>
+
+            </section>
+
+        </main>
+
+
+        <!-- BOTTOM NAVIGATION -->
+        <nav>
+
+            <div
+                class="nav-item active"
+                onclick="window.location.href='index.html'">
+
+                &#127968;
+
+                <span>Home</span>
+
+            </div>
+
+
+            <div
+                class="nav-item"
+                onclick="window.location.href='scan.html'">
+
+                &#128269;
+
+                <span>Scan</span>
+
+            </div>
+
+
+            <div
+                class="nav-item"
+                onclick="window.location.href='safety.html'">
+
+                &#128202;
+
+                <span>Safety</span>
+
+            </div>
+
+
+            <div
+                class="nav-item"
+                onclick="openAppControl()">
+
+                &#128274;
+
+                <span>Apps</span>
+
+            </div>
+
+        </nav>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

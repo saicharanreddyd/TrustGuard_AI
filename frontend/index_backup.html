@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustGuard AI</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header>
+            <div class="logo">
+                <div class="shield">🛡️</div>
+                <div>
+                    <h1>TrustGuard <span>AI</span></h1>
+                    <p>Personal Digital Safety</p>
+                </div>
+            </div>
+
+            <div class="status">
+                <span></span> Protected
+            </div>
+        </header>
+
+        <main>
+
+            <section class="hero">
+                <div class="hero-icon">🛡️</div>
+                <h2>You're Protected</h2>
+                <p>
+                    TrustGuard automatically helps detect
+                    suspicious messages, links, emails and news.
+                </p>
+            </section>
+
+            <section class="actions">
+
+                <div class="card" onclick="openScanner('notification')">
+                    <div class="card-icon">🔔</div>
+                    <h3>Notifications</h3>
+                    <p>Check suspicious notifications</p>
+                </div>
+
+                <div class="card" onclick="openScanner('link')">
+                    <div class="card-icon">🔗</div>
+                    <h3>Check a Link</h3>
+                    <p>Detect suspicious websites</p>
+                </div>
+
+                <div class="card" onclick="openScanner('message')">
+                    <div class="card-icon">💬</div>
+                    <h3>Check Message</h3>
+                    <p>Analyze messages and scams</p>
+                </div>
+
+                <div class="card" onclick="openScanner('news')">
+                    <div class="card-icon">📰</div>
+                    <h3>Verify News</h3>
+                    <p>Check claims and information</p>
+                </div>
+
+            </section>
+
+            <section class="security">
+                <div>
+                    <strong>🔐 Privacy First</strong>
+                    <p>Your detected information is automatically deleted after 24 hours.</p>
+                </div>
+
+                <div class="delete-btn" onclick="deleteData()">
+                    Delete Now
+                </div>
+            </section>
+
+        </main>
+
+        <nav>
+            <div class="nav-item active">🏠<span>Home</span></div>
+            <div class="nav-item" onclick="openScanner('message')">🔍<span>Scan</span></div>
+            <div class="nav-item">📊<span>Safety</span></div>
+            <div class="nav-item" onclick="window.location.href='safety.html'">
+    📊<span>Safety</span>
+</div>
+        </nav>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
