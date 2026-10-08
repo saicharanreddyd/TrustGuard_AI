@@ -44,7 +44,7 @@ async function analyzeContent() {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:8000/analyze",
+            "http://10.119.115.60:8000/analyze",
             {
                 method: "POST",
                 headers: {
